@@ -8,13 +8,13 @@
 Summary:	Spiffy - Spiffy Perl Interface Framework For You
 Summary(pl):	Spiffy - szkielet interfejsu perlowego dla ciebie
 Name:		perl-Spiffy
-Version:	0.20
+Version:	0.21
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/I/IN/INGY/%{pnam}-%{version}.tar.gz
-# Source0-md5:	da0e2c24599cdfcbebf881f19eee7c9f
+# Source0-md5:	3279a0a0e5953dae2fd508c44d0f9737
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
