@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Spiffy
-%define	pnam	Spiffy
+%define		pdir	Spiffy
+%define		pnam	Spiffy
 Summary:	Spiffy - Spiffy Perl Interface Framework For You
 Summary(pl):	Spiffy - szkielet interfejsu perlowego dla ciebie
 Name:		perl-Spiffy
