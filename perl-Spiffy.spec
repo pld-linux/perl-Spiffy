@@ -10,8 +10,8 @@ Summary(pl):	Spiffy - szkielet interfejsu perlowego dla ciebie
 Name:		perl-Spiffy
 Version:	0.15
 Release:	1
-# Same as Perl
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/I/IN/INGY/%{pnam}-%{version}.tar.gz
 # Source0-md5:	e49cd985891b3f032e5d19fd5e386593
@@ -37,8 +37,8 @@ Perla przy u¿yciu ulubionych sztuczek autora.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
+
 %{?with_tests:%{__make} test}
 
 %install
