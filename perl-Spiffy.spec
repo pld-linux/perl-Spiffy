@@ -1,11 +1,12 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Spiffy
 %define	pnam	Spiffy
 Summary:	Spiffy Perl Interface Framework For You
+Summary(pl):	Spiffy - szkielet interfejsu perlowego dla Ciebie
 Name:		perl-Spiffy
 Version:	0.13
 Release:	1
@@ -23,6 +24,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 "Spiffy" is a Perl module interface methodology and framework. It is
 a base class for implementing other Perl modules using author's
 favorite tricks.
+
+%description -l pl
+"Spiffy" (Spiffy Perl Interface Framework For You, czyli szkielet
+interfejsu perlowego dla Ciebie) to metodologia i szkielet interfejsu
+modu³u Perla. Jest to klasa bazowa do implementowania innych modu³ów
+Perla przy u¿yciu ulubionych sztuczek autora.
 
 %prep
 %setup -q -n %{pnam}-%{version}
