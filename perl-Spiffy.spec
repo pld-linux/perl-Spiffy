@@ -22,9 +22,9 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-"Spiffy" is a Perl module interface methodology and framework. It is
-a base class for implementing other Perl modules using author's
-favorite tricks.
+"Spiffy" is a Perl module interface methodology and framework. It is a
+base class for implementing other Perl modules using author's favorite
+tricks.
 
 %description -l pl
 "Spiffy" (Spiffy Perl Interface Framework For You, czyli szkielet
@@ -47,6 +47,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Spiffy/.packlist
 
 %clean
 rm -rf $RPM_BUILD_ROOT
