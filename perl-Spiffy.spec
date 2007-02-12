@@ -6,7 +6,7 @@
 %define		pdir	Spiffy
 %define		pnam	Spiffy
 Summary:	Spiffy - Spiffy Perl Interface Framework For You
-Summary(pl):	Spiffy - szkielet interfejsu perlowego dla ciebie
+Summary(pl.UTF-8):   Spiffy - szkielet interfejsu perlowego dla ciebie
 Name:		perl-Spiffy
 Version:	0.30
 Release:	1
@@ -26,11 +26,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 base class for implementing other Perl modules using author's favorite
 tricks.
 
-%description -l pl
+%description -l pl.UTF-8
 "Spiffy" (Spiffy Perl Interface Framework For You, czyli szkielet
 interfejsu perlowego dla ciebie) to metodologia i szkielet interfejsu
-modu≥u Perla. Jest to klasa bazowa do implementowania innych modu≥Ûw
-Perla przy uøyciu ulubionych sztuczek autora.
+modu≈Çu Perla. Jest to klasa bazowa do implementowania innych modu≈Ç√≥w
+Perla przy u≈ºyciu ulubionych sztuczek autora.
 
 %prep
 %setup -q -n %{pnam}-%{version}
