@@ -6,7 +6,7 @@
 %define		pdir	Spiffy
 %define		pnam	Spiffy
 Summary:	Spiffy - Spiffy Perl Interface Framework For You
-Summary(pl.UTF-8):   Spiffy - szkielet interfejsu perlowego dla ciebie
+Summary(pl.UTF-8):	Spiffy - szkielet interfejsu perlowego dla ciebie
 Name:		perl-Spiffy
 Version:	0.30
 Release:	1
