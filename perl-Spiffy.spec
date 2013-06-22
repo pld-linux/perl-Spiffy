@@ -8,13 +8,13 @@
 Summary:	Spiffy - Spiffy Perl Interface Framework For You
 Summary(pl.UTF-8):	Spiffy - szkielet interfejsu perlowego dla ciebie
 Name:		perl-Spiffy
-Version:	0.30
-Release:	3
+Version:	0.31
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/I/IN/INGY/%{pnam}-%{version}.tar.gz
-# Source0-md5:	49860ccf2127c6d2af3d98560ffae644
+# Source0-md5:	53cfd4e915715e6dac912469af3d71a0
 URL:		http://search.cpan.org/dist/Spiffy/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -45,9 +45,10 @@ Perla przy użyciu ulubionych sztuczek autora.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install \
+%{__make} pure_install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Spiffy.pod
 rm -f $RPM_BUILD_ROOT%{perl_vendorarch}/auto/Spiffy/.packlist
 
 %clean
@@ -57,4 +58,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Spiffy.pm
-%{_mandir}/man3/Spiffy*
+%{perl_vendorlib}/Spiffy
+%{_mandir}/man3/Spiffy*.3pm*
