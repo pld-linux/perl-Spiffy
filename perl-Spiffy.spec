@@ -9,7 +9,7 @@ Summary:	Spiffy - Spiffy Perl Interface Framework For You
 Summary(pl.UTF-8):	Spiffy - szkielet interfejsu perlowego dla ciebie
 Name:		perl-Spiffy
 Version:	0.46
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
