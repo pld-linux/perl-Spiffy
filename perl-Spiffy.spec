@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Spiffy
 %define		pnam	Spiffy
 Summary:	Spiffy - Spiffy Perl Interface Framework For You
